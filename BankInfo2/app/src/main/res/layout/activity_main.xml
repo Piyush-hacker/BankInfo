@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="IFSC Code Validator"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp" />
+
+
+    <EditText
+        android:id="@+id/idedtIfscCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter IFSC code"
+        android:importantForAutofill="no"
+        android:inputType="textCapCharacters"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAllCaps="true" />
+
+
+    <Button
+        android:id="@+id/idBtnGetBankDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Get Bank Details"
+        android:textAllCaps="false" />
+
+    <!--text view to display the
+        data received from IFSC code-->
+    <TextView
+        android:id="@+id/idTVBankDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_500"
+        android:textSize="15sp" />
+
+</LinearLayout>
